@@ -1,0 +1,56 @@
+HTML : 
+
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 ">nav</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 ">header</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-7">
+        article
+        <div class="section">section</div>
+      </div>
+      <div class="col-lg-5">aside</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">footer</div>
+    </div>
+  </div>
+
+
+CSS:
+
+.row  {
+  background-color: #99d6ff;
+  text-align:center;
+  margin-bottom:5px;
+}
+.row div{
+  align-self: center;
+}
+
+.col-lg-7 {
+  height: 100px;
+  line-height: 15px;
+}
+.section {
+  margin:10px;
+ height: 60px;
+ line-height: 55px;
+  background-color: #1aa3ff;
+}
+@media (min-width : 992px) {
+  .col-lg-7{
+    border-right: 5px solid white;
+  }
+}
+@media (max-width : 991px) {
+  .col-lg-7{
+    border-bottom: 5px solid white;
+  }
+}
